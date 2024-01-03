@@ -1,3 +1,3 @@
 import CardView from "./CardView";
-
-export { CardView };
+import Divider from "./Divider";
+export { CardView, Divider };
