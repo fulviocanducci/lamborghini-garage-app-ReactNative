@@ -1,6 +1,22 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  noContainer: {
+    flex: 1,
+    alignItems: "center",
+    alignContent: "center",
+    justifyContent: "center",
+  },
+  noContainerText: {
+    width: "100%",
+    color: "#FFFFFF",
+    alignItems: "center",
+    textAlign: "center",
+    alignContent: "center",
+    justifyContent: "center",
+    fontSize: 25,
+    fontWeight: "bold",
+  },
   imageContainer: {
     flex: 1,
     width: "100%",

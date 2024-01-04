@@ -47,6 +47,13 @@ export default function CardView() {
       ></Button>
     </View>
   );
+  if (!carData) {
+    return (
+      <View style={styles.noContainer}>
+        <Text style={styles.noContainerText}>Carregando ...</Text>
+      </View>
+    );
+  }
   return (
     <View style={styles.imageContainer}>
       {renderLogoContainer()}
