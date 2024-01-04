@@ -7,13 +7,14 @@ import Divider from "../Divider";
 import { CAR_ASSETS_BASE_URL } from "../../constants/car";
 import { BuyButton } from "../BuyButton";
 import { CarModel } from "./props";
-import { handleNextItem, handlePreviousItem, loadCarData } from "./actions";
+import { handleNextItem, handlePreviousItem, loadCarData, loadCarDataGet } from "./actions";
 
 export default function CardView() {
   const [carData, setCarData] = useState<CarModel>();
   useEffect(() => {
     (async () => {
-      await loadCarData(1, setCarData);
+      await loadCarData();
+      await loadCarDataGet(1, setCarData);
     })();
   }, []);
   const renderLogoContainer = () => (

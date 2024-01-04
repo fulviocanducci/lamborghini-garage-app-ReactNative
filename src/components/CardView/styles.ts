@@ -67,5 +67,8 @@ export const styles = StyleSheet.create({
   priceLabel: {
     color: "#FFFFFF",
     fontSize: 22,
+    width: "30%",
+    textAlign: "center",
+    justifyContent: "center",
   },
 });
