@@ -39,7 +39,17 @@ export const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     resizeMode: "contain",
-    textAlign: "center",
     justifyContent: "center",
+  },
+  priceLabelContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    paddingBottom: 10,
+    marginTop: 10,
+  },
+  priceLabel: {
+    color: "#FFFFFF",
+    fontSize: 22,
   },
 });
